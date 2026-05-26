@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8F1FB;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1A1A1A;
+}
+
+header {
+    background-color: #1B3A6B; 
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 4px solid red;
+}
+
+.numero-linea {
+    display: inline-block;
+    background-color: white;
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 26px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #1B3A6B;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 17px;
+    color: #1B3A6B;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: white;
+    margin-bottom: 12px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border-left: 4px solid #1B3A6B;
+    color: #555555;
+}
+
+.destinos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.destinos-lista li {
+    background-color: #E8F1FB;
+    color: #1A5CA8;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    border-left: none;
+    margin-bottom: 0;
+}
+
+
+.ficha {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2A5FAC;
+}
+
+.ficha p {
+    margin-bottom: 8px;
+}
+
+.parada-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border-left: 4px solid #1B3A6B;
+}
+
+.numero-parada {
+    background-color: #1B3A6B;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.parada-texto strong {
+    display: block;
+    color: #1A1A1A;
+    font-size: 15px;
+}
+
+.parada-texto span {
+    color: #555555;
+    font-size: 13px;
+}
+
+.frecuencia-grilla {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.frecuencia-item {
+    background-color: white;
+    border-left: 4px solid #1B3A6B;
+    padding: 10px 15px;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 140px;
+}
+
+.frecuencia-item strong {
+    display: block;
+    font-size: 12px;
+    color: #1B3A6B;
+    margin-bottom: 4px;
+}
+
+.frecuencia-item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1A1A1A;
+}
+
+.accesibilidad-grilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.acc-item {
+    background-color: #d3f2d1;
+    border: 1px solid #097901;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+
+.acc-item strong {
+    display: block;
+    color: #097901;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.acc-item p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.aviso {
+    background-color: #f3e6ba;
+    border: 2px solid #F5C518;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #1B3A6B;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 4px;
+    opacity: 0.9;
+}
+
+
+@media (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+
+}
